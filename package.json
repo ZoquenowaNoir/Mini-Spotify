@@ -1,0 +1,48 @@
+{
+    "name": "mini-spotify",
+    "version": "1.0.0",
+    "description": "My personal music player",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-builder"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ZoquenowaNoir/Mini-Spotify.git"
+    },
+    "keywords": [],
+    "author": "Zoquenowa",
+    "license": "ISC",
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/ZoquenowaNoir/Mini-Spotify/issues"
+    },
+    "homepage": "https://github.com/ZoquenowaNoir/Mini-Spotify#readme",
+    "devDependencies": {
+        "electron": "^43.4.0",
+        "electron-builder": "^26.15.3"
+    },
+    "build": {
+        "appId": "com.zoquen.minispotify",
+        "productName": "Mini-Spotify",
+        "files": [
+            "index.html",
+            "style.css",
+            "script.js",
+            "main.js",
+            "music/**/*",
+            "images/**/*",
+            "package.json"
+        ],
+        "win": {
+            "target": "nsis"
+        },
+        "nsis": {
+            "oneClick": false,
+            "allowToChangeInstallationDirectory": true,
+            "createDesktopShortcut": true,
+            "createStartMenuShortcut": true
+        }
+    }
+}

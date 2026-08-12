@@ -1,2 +1,160 @@
-<!DOCTYPE html>     
-    
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini-Spotify by Zoquen</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar">
+
+            <h1>♫ Mini-Spotify</h1>
+
+            <nav class="main-menu">
+
+                <button id="home-button">⌂ Home</button>
+
+                <button id="songs-button">
+                    🎵 Songs
+                </button>
+
+                <button>
+                    💿 Albums
+                </button>
+
+                <button>
+                    👤 Artists
+                </button>
+
+            </nav>
+
+
+            <h2>PLAYLISTS</h2>
+
+            <nav class="playlists">
+
+                <button id="favourites">
+                    ♥ Favourites
+                </button>
+
+                <button id="linkin-park">
+                    Linkin Park
+                </button>
+
+                <button id="evanescence">
+                    Evanescence
+                </button>
+
+                <button id="halestorm">
+                    Halestorm
+                </button>
+
+            </nav>
+
+        </aside>
+
+
+        <main class="main">
+
+
+            <!-- =========================
+                 EKRAN GŁÓWNY
+            ========================== -->
+
+            <section id="player-view">
+
+                <h2>Now Playing</h2>
+
+                <div class="album">
+
+                    <img
+                        id="album-cover"
+                        src="images/cover.jpg"
+                        alt="Album cover"
+                    >
+
+                </div>
+
+
+                <h1 id="song-title">
+                    Bring Me To Life
+                </h1>
+
+
+                <p id="artist">
+                    Evanescence
+                </p>
+
+
+                <div class="progress-container">
+
+                    <span id="current-time">
+                        0:00
+                    </span>
+
+                    <input
+                        type="range"
+                        id="progress"
+                        min="0"
+                        max="100"
+                        value="0"
+                    >
+
+                    <span id="duration">
+                        0:00
+                    </span>
+
+                </div>
+
+
+                <div class="controls">
+
+                    <button id="previous">
+                        ⏮
+                    </button>
+
+                    <button id="play">
+                        ▶
+                    </button>
+
+                    <button id="next">
+                        ⏭
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================
+                 LISTA PIOSENEK
+            ========================== -->
+
+            <section id="songs-view">
+
+                <h2>All Songs</h2>
+
+                <div id="songs-list"></div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
